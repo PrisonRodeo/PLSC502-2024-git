@@ -1,1 +1,0 @@
-program define meansamp, rclass version 10 use WarrenBurger, clear sample 10, count summarize fedpet return scalar mean=r(mean)end
