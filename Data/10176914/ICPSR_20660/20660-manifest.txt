@@ -1,0 +1,50 @@
+File Manifest for ICPSR 20660
+
+Inter-university Consortium for Political and Social  Research. COUNTY
+CHARACTERISTICS, 2000-2007 [UNITED STATES] [Computer  file]. 2008. Ann
+Arbor, MI: Inter-university Consortium for Political and Social Research
+[producer and distributor], 2008-01-24.
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    20660-manifest.txt                  -       -         -         -       -       2008-08-20  -
+
+
+DS0001 County Characteristics, 2000-2007 [United States]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    20660-0001-Codebook.pdf             -       -         -       2008-01-24  1a99dd7c43f0dd491195014850c8ab1a
+
+    20660-0001-Data.dta                 -       3,141     470     2007-10-24  67b23ecdda21ae3660a48b86ab687f1e
+
+    20660-0001-Data.sav                 -       3,141     470     2007-10-24  bd25b9697ee15d7840db18bd6a1c887d
+
+    20660-0001-Data.stc                 -       3,141     470     2007-10-24  646e00e413c623521fdccb172ee621b4
+
+    20660-0001-Data.txt                 3747    3,141     470     2007-10-24  4e5f98d5838f9ec60617a54ee0ca8bb9
+
+    20660-0001-Frequencies.pdf          -       -         -       2007-10-24  08809179806f4da579d09633e0e5e64b
+
+    20660-0001-Record_layout.txt        -       -         -       2007-10-24  66a9688cd8de7a76460b5cb9788b75e9
+
+    20660-0001-Setup.dct                -       -         -       2007-10-24  78b389baec8bb0d3c4a8821f5df6b42d
+
+    20660-0001-Setup.do                 -       -         -       2007-10-24  4c79133da0883c14a910e83fc562917b
+
+    20660-0001-Setup.sas                -       -         -       2007-10-24  0edac5052ec651be0d83e1db2f6d83f8
+
+    20660-0001-Setup.sps                -       -         -       2007-10-24  f75e9ef3401889db9c6ee5ab7a5d438b
+
+
+Version History
+
+2008-01-24 A number of minor edits were made to the  codebook, none of
+which substantially affected the variable descriptions.

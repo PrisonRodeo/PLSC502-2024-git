@@ -1,0 +1,155 @@
+Hi Stephen and all,
+
+your question is a good point to highlight (or recall) come of the
+most basic and powerful features of R: it is an object oriented
+language.
+This means, that it might be useful for users to look into different
+object classes, and their summary() and print() methods.
+
+Here I paste some code that I hope might help to understand what I
+mean. But for this particular problem, when you have a time series (if
+I am right), the use of LM is not necessarily the best choice, because
+of the non-independence of the data. You might consider to use the
+nlme or lme4 packages and explicitly define autoregressive correlation
+structure.
+
+Anyway, here the code goes!
+
+Cheers,
+
+Peter
+
+
+-- 
+Peter Solymos, PhD
+Institute for Biology
+Faculty of Veterinary Science
+Szent Istvan University, Hungary
+http://www.univet.hu/users/psolymos/personal/
+
+mefa R package
+http://mefa.r-forge.r-project.org/
+
+# create an empty list
+mod <- list()
+# start a loop for create 5 objects of class 'lm'
+for (i in 1:5) {
+x <- rnorm(i*10)
+y <- rnorm(i*10)
+mod[[paste("run",i,sep="")]] <- lm(y ~ x)
+}
+
+# let's have a look at the models
+mod
+
+# summary for one element
+summary(mod$run1)
+
+# see description of value in help:
+?summary.lm
+# and also how its display works:
+getAnywhere(print.summary.lm)
+
+# your requests
+# 1) the number of data points in the analysis, n
+length(mod$run1$model$y)
+
+# 2) the standard error of the slope
+summary(mod$run1)$coefficients[2,2]
+
+# 3) the P value (for coefficients and for the F statistic, respectively)
+summary(mod$run1)$coefficients[,4]
+pf(summary(mod$run1)$fstatistic[1], summary(mod$run1)$fstatistic[2],
+summary(mod$run1)$fstatistic[3], lower.tail = FALSE)
+
+# 4) the R-squared value
+summary(mod$run1)$r.squared
+
+# to extract these from a list of lm models, better to write a function
+# (you can modify this accordingly):
+myFun <-
+function(lm)
+{
+out <- c(lm$coefficients[1],
+	lm$coefficients[2],
+	length(lm$model$y),
+	summary(lm)$coefficients[2,2],
+	pf(summary(lm)$fstatistic[1], summary(lm)$fstatistic[2],
+summary(lm)$fstatistic[3], lower.tail = FALSE),
+	summary(lm)$r.squared)
+names(out) <- c("intercept","slope","n","slope.SE","p.value","r.squared")
+return(out)}
+
+# now let's see
+myFun(mod$run1)
+
+# and for a list of lm models:
+results <- list()
+for (i in 1:length(mod)) results[[names(mod)[i]]] <- myFun(mod[[i]])
+as.data.frame(results)
+
+# for a more generic solution, you should have look at the stamp
+function in the reshape package:
+library(reshape)
+?stamp
+# example from the stamp help:
+french_fries$time <- as.numeric(as.character(french_fries$time))
+stamp(french_fries, subject ~ ., function(df) coef(lm(painty ~ time, df))[2])
+stamp(french_fries, subject ~ treatment, function(df) coef(lm(painty ~
+time, df))[2])
+models <- stamp(french_fries, subject ~ ., function(df) lm(painty ~ time, df))
+dim(models)
+anova(models[[3,1]])
+
+
+On Fri, May 2, 2008 at 12:00 PM,  <r-sig-ecology-request at r-project.org> wrote:
+>  Message: 1
+>  Date: Fri, 02 May 2008 08:55:10 +0100
+>  From: "Stephen Thackeray" <sjtr at ceh.ac.uk>
+>  Subject: [R-sig-eco] Extracting information from lm results
+>  To: <r-sig-ecology at r-project.org>
+>  Message-ID: <s81ad6fc.021 at wpo.nerc.ac.uk>
+>  Content-Type: text/plain; charset=US-ASCII
+>
+>  Dear all,
+>
+>  I suspect that this might be a bit basic, but here goes anyway...
+>
+>  I am soon to run a large number of linear regressions and I would like to extract a number of details from the models, and then collate them in a dataframe as a summary of the overall block of analyses. I can successfully extract the intercept and slope by using, for example:
+>
+>  lm1<-lm(ASTF~Year,na.action=na.omit,subset=yr10==T)
+>  a1<-lm1$coefficients[1]
+>  b1<-lm1$coefficients[2]
+>  out1<-cbind("ASTF","1996-2005",lm1$coefficients[1],lm1$coefficients[2])
+>
+>  However, I also would like to extract the following too:
+>
+>  1) the number of data points in the analysis, n
+>  2) the standard error of the slope
+>  3) the P value
+>  4) the R-squared value
+>
+>  Is it possible to extract these parameters in the same way as the slope and intercept, to save a lot of typing?
+>
+>  Any help much appreciated!
+>
+>  Steve Thackeray
+>
+>
+>
+>  Dr Stephen Thackeray
+>  Lake Ecosystem Group
+>  CEH Lancaster
+>  Lancaster Environment Centre
+>  Library Avenue
+>  Bailrigg
+>  Lancaster
+>  LA1 4AP
+>
+>  Email: sjtr at ceh.ac.uk
+>  Tel: +44 (0) 1524 595852
+>  Fax: +44 (0) 1524 61536
+>
+>  Disclaimer: Any views or opinions expressed in this mail or any files transmitted with it are those of the author and do not represent the views of NERC unless otherwise explicitly stated. The information contained in this email may be subject to public disclosure under the Freedom of Information Act 2000. Unless the information is legally exempt from disclosure, the confidentiality of this e-mail and your reply cannot be guaranteed.
+>
+>

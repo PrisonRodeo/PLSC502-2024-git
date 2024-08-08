@@ -1,0 +1,624 @@
+
+R version 2.6.1 (2007-11-26)
+Copyright (C) 2007 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Loading required package: stats
+
+Attaching package: 'Matrix'
+
+
+	The following object(s) are masked from package:stats :
+
+	 xtabs 
+
+
+Attaching package: 'boot'
+
+
+	The following object(s) are masked from package:lattice :
+
+	 melanoma 
+
+Loading required package: RColorBrewer
+
+Attaching package: 'gtools'
+
+
+	The following object(s) are masked from package:boot :
+
+	 inv.logit,
+	 logit 
+
+Loading required package: KernSmooth
+KernSmooth 2.22 installed
+Copyright M. P. Wand 1997
+Loading required package: mvtnorm
+Warning messages:
+1: In namespaceImportFrom(self, asNamespace(ns)) :
+  replacing previous import: cov2cor
+2: In namespaceImportFrom(self, asNamespace(ns)) :
+  replacing previous import: xtabs
+Loading required package: zoo
+Loading required package: akima
+locfit 1.5-4 	 2007-11-27 
+
+Attaching package: 'nlme'
+
+
+	The following object(s) are masked from package:lme4 :
+
+	 BIC,
+	 VarCorr,
+	 fixef,
+	 gsummary,
+	 lmList,
+	 pooledSD,
+	 ranef 
+
+Nonparametric Kernel Methods for Mixed Datatypes (version 0.14-2)
+
+Attaching package: 'robustbase'
+
+
+	The following object(s) are masked from package:boot :
+
+	 salinity 
+
+Loading required package: tcltk
+Loading Tcl/Tk interface ... done
+Package `rpanel', version 1.0-4
+type help(rpanel) for summary information
+Tools for Social Network Analysis
+Version 1.5 created on 2007-07-31.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+Type help(package="sna") to get started.
+
+Attaching package: 'sna'
+
+
+	The following object(s) are masked from package:nlme :
+
+	 gapply 
+
+
+	The following object(s) are masked from package:latticeExtra :
+
+	 gplot 
+
+
+Attaching package: 'survival'
+
+
+	The following object(s) are masked from package:robustbase :
+
+	 heart 
+
+
+	The following object(s) are masked from package:boot :
+
+	 aml 
+
+Loading required package: car
+
+Attaching package: 'car'
+
+
+	The following object(s) are masked from package:gtools :
+
+	 logit 
+
+
+	The following object(s) are masked from package:ellipse :
+
+	 ellipse 
+
+
+	The following object(s) are masked from package:boot :
+
+	 logit 
+
+Loading required package: colorspace
+
+Attaching package: 'vcd'
+
+
+	The following object(s) are masked from package:latticeExtra :
+
+	 rootogram 
+
+Loading required package: sm
+Package `sm', version 2.2-2;  Copyright (C) 1997, 2000, 2005, 2007 A.W.Bowman & A.Azzalini
+type help(sm) for summary information
+Loading required package: tseries
+Loading required package: quadprog
+
+    ÔtseriesÕ version: 0.10-13
+
+    ÔtseriesÕ is a package for time series analysis and computational
+    finance.
+
+    See Ôlibrary(help="tseries")Õ for details.
+
+
+Attaching package: 'tseries'
+
+
+	The following object(s) are masked from package:chron :
+
+	 is.weekend 
+
+This is forecast 1.09 
+
+Attaching package: 'effects'
+
+
+	The following object(s) are masked from package:car :
+
+	 Cowles,
+	 Prestige 
+
+
+Attaching package: 'gam'
+
+
+	The following object(s) are masked from package:sna :
+
+	 gplot 
+
+
+	The following object(s) are masked from package:locfit :
+
+	 gam.slist 
+
+
+	The following object(s) are masked from package:latticeExtra :
+
+	 gplot 
+
+This is gllm 0.31
+Loading required package: gdata
+
+Attaching package: 'gplots'
+
+
+	The following object(s) are masked from package:stats :
+
+	 lowess 
+
+Loading required package: nnet
+MICE V1.16 library            Copyright (2004) TNO Prevention and Health, Leiden
+This library is distributed under the GNU General Public License (version 2)
+Loading required package: kinship
+
+Attaching package: 'kinship'
+
+
+	The following object(s) are masked from package:lme4 :
+
+	 pedigree 
+
+Loading required package: multilevel
+MM-regression estimators (version 0.6)
+##  rgenoud (Version 5.4-7, Build Date: 2007-01-04)
+##  See http://sekhon.berkeley.edu/rgenoud for additional documentation.
+Loading required package: foreign
+Loading required package: sp
+Loading required package: RGtk2
+Loading required package: reshape
+
+Attaching package: 'reshape'
+
+
+	The following object(s) are masked from package:Matrix :
+
+	 expand 
+
+Loading required package: ggplot
+ggplot is now deprecated.  Please visit http://had.co.nz/ggplot2 to learn more about the latest version
+
+Attaching package: 'ggplot'
+
+
+	The following object(s) are masked from package:psychometric :
+
+	 alpha 
+
+Loading required package: R2WinBUGS
+
+arm (Version 1.1-1, built: 2008-1-13)
+Working directory is /Users/cuz10/Desktop 
+options( digits =  2 )
+
+Attaching package: 'arm'
+
+
+	The following object(s) are masked from package:ggplot :
+
+	 rescale 
+
+##
+## Markov Chain Monte Carlo Package (MCMCpack)
+## Copyright (C) 2003-2008 Andrew D. Martin, Kevin M. Quinn, and Jong Hee Park
+##
+## Support provided by the U.S. National Science Foundation
+## (Grants SES-0350646 and SES-0350613)
+##
+
+Attaching package: 'MCMCpack'
+
+
+	The following object(s) are masked from package:ks :
+
+	 vech 
+
+
+	The following object(s) are masked from package:gtools :
+
+	 ddirichlet,
+	 rdirichlet 
+
+Loading required package: brlr
+Loading required package: Hmisc
+
+Attaching package: 'Hmisc'
+
+
+	The following object(s) are masked from package:gdata :
+
+	 combine,
+	 reorder.factor 
+
+
+	The following object(s) are masked from package:car :
+
+	 recode 
+
+
+	The following object(s) are masked from package:survival :
+
+	 untangle.specials 
+
+
+	The following object(s) are masked from package:locfit :
+
+	 store 
+
+
+	The following object(s) are masked from package:base :
+
+	 format.pval,
+	 round.POSIXt,
+	 trunc.POSIXt,
+	 units 
+
+Design library by Frank E Harrell Jr
+
+Type library(help='Design'), ?Overview, or ?Design.Overview')
+to see overall documentation.
+
+
+Attaching package: 'Design'
+
+
+	The following object(s) are masked from package:Hmisc :
+
+	 .R.,
+	 .SV4. 
+
+
+	The following object(s) are masked from package:car :
+
+	 vif 
+
+
+	The following object(s) are masked from package:survival :
+
+	 Surv,
+	 survfit 
+
+
+	The following object(s) are masked from package:lmtest :
+
+	 lrtest 
+
+Loading required package: ltm
+Loading required package: msm
+Loading required package: polycor
+
+This is package 'ltm' version '0.8-2'
+
+
+Attaching package: 'irtoys'
+
+
+	The following object(s) are masked from package:arm :
+
+	 sim 
+
+MNP: R Package for Fitting the Multinomial Probit Model
+Version: 2.5-5
+Loading required package: optmatch
+Loading required package: Matching
+## 
+##  Matching (Version 4.5-3, Build Date: 2007/09/19)
+##  See http://sekhon.berkeley.edu/matching for additional documentation.
+##  Please cite software as:
+##   Jasjeet S. Sekhon. 2007. ``Multivariate and Propensity Score Matching
+##   Software with Automated Balance Optimization: The Matching package for R.''
+##   Journal of Statistical Software. 
+##
+Loading required package: WhatIf
+Loading required package: lpSolve
+
+Attaching package: 'lpSolve'
+
+
+	The following object(s) are masked from package:locfit :
+
+	 lp 
+
+#######################################################
+## 
+##  WhatIf (Version 1.5-4, built 2007-09-24)
+##  Complete documentation available from http://gking.harvard.edu/whatif 
+## 
+#######################################################
+Loading required package: rpart
+Loading required package: mgcv
+This is mgcv 1.3-29 
+
+Attaching package: 'mgcv'
+
+
+	The following object(s) are masked from package:gam :
+
+	 anova.gam,
+	 gam,
+	 gam.control,
+	 gam.fit,
+	 plot.gam,
+	 predict.gam,
+	 print.gam,
+	 print.summary.gam,
+	 s,
+	 summary.gam 
+
+## 
+##  MatchIt (Version 2.3-1, built: 2007-10-11)
+##  Please refer to http://gking.harvard.edu/matchit for full documentation 
+##  or help.matchit() for help with commands supported by MatchIt.
+##
+
+Attaching package: 'Amelia'
+
+
+	The following object(s) are masked from package:Hmisc :
+
+	 impute 
+
+
+	The following object(s) are masked from package:mvtnorm :
+
+	 rmvnorm 
+
+> ls()
+[1] "DH"    "NC"    "NFL"   "eitan" "terms"
+> summary(eitan)
+  0   1   3   4   5   6   7   9  10 
+374 303 152 271 353 159 189  87 181 
+> rm(eitan)
+> summary(terms)
+  0   1   3   4   5   6   7   9  10 
+374 303 152 271 353 159 189  87 181 
+> rm(terms)
+> ExerciseTwo<-read.dta("~/Desktop/PLSC 502/Exercises/ExerciseTwo.dta")
+Warning message:
+In read.dta("~/Desktop/PLSC 502/Exercises/ExerciseTwo.dta") :
+  value labels (GOP) for GOP are missing
+> summary(ExerciseTwo)
+     name              state              district         vote1           vote2           vote3          vote4          votesum          GOP            ADA98            CC98         Clinton96       unionpct        Member98    
+ Length:435         Length:435         Min.   : 1.00   Min.   :0.000   Min.   :0.000   Min.   :0.00   Min.   :0.000   Min.   :0.00   Min.   :0.000   Min.   :  0.0   Min.   :  0.0   Min.   :26.0   Min.   : 2.57   Min.   : 46.0  
+ Class :character   Class :character   1st Qu.: 3.00   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.00   1st Qu.:0.000   1st Qu.:0.00   1st Qu.:0.000   1st Qu.:  5.0   1st Qu.:  0.0   1st Qu.:42.0   1st Qu.: 9.40   1st Qu.: 61.0  
+ Mode  :character   Mode  :character   Median : 6.00   Median :1.000   Median :0.000   Median :1.00   Median :0.000   Median :2.00   Median :1.000   Median : 30.0   Median : 58.0   Median :48.0   Median :16.90   Median : 68.0  
+                                       Mean   : 9.98   Mean   :0.525   Mean   :0.472   Mean   :0.51   Mean   :0.342   Mean   :1.85   Mean   :0.524   Mean   : 46.6   Mean   : 52.9   Mean   :50.3   Mean   :16.38   Mean   : 72.3  
+                                       3rd Qu.:13.00   3rd Qu.:1.000   3rd Qu.:1.000   3rd Qu.:1.00   3rd Qu.:1.000   3rd Qu.:4.00   3rd Qu.:1.000   3rd Qu.: 90.0   3rd Qu.:100.0   3rd Qu.:57.0   3rd Qu.:21.51   3rd Qu.: 83.0  
+                                       Max.   :52.00   Max.   :1.000   Max.   :1.000   Max.   :1.00   Max.   :1.000   Max.   :4.00   Max.   :1.000   Max.   :100.0   Max.   :100.0   Max.   :94.0   Max.   :37.33   Max.   :100.0  
+                                                       NA's   :1.000   NA's   :1.000   NA's   :2.00   NA's   :2.000   NA's   :2.00                                   NA's   :  2.0                                  NA's   : 40.0  
+> ExerciseThree<-read.dta("~/Desktop/PLSC 502/Exercises/ExerciseThree.dta")
+> ls()
+[1] "DH"            "ExerciseThree" "ExerciseTwo"   "NC"            "NFL"          
+> summary(ExerciseThree)
+          State          County         FIPS        StateName          CountyName           LandArea            Pop05           PopGr00.05          HU05          Pop85plus05       SexRatio05     MedianAge05      White05       
+ 48: Texas   : 254   Min.   :  1   Min.   : 1001   Length:3141        Length:3141        Min.   :1.99e+00   Min.   :     62   Min.   :-23.97   Min.   :     72   Min.   :     1   Min.   :0.760   Min.   :20.1   Min.   :     46  
+ 13: Georgia : 159   1st Qu.: 35   1st Qu.:18181   Class :character   Class :character   1st Qu.:4.32e+02   1st Qu.:  11211   1st Qu.: -1.78   1st Qu.:   5330   1st Qu.:   235   1st Qu.:0.950   1st Qu.:36.0   1st Qu.:   9299  
+ 51: Virginia: 134   Median : 79   Median :29179   Mode  :character   Mode  :character   Median :6.17e+02   Median :  25235   Median :  1.43   Median :  11767   Median :   494   Median :0.980   Median :38.6   Median :  22172  
+ 21: Kentucky: 120   Mean   :104   Mean   :30408                                         Mean   :1.13e+03   Mean   :  94368   Mean   :  2.31   Mean   :  39644   Mean   :  1622   Mean   :0.993   Mean   :38.6   Mean   :  75726  
+ 29: Missouri: 115   3rd Qu.:133   3rd Qu.:45083                                         3rd Qu.:9.23e+02   3rd Qu.:  64040   3rd Qu.:  5.06   3rd Qu.:  28761   3rd Qu.:  1115   3rd Qu.:1.010   3rd Qu.:41.4   3rd Qu.:  56982  
+ 20: Kansas  : 105   Max.   :840   Max.   :56045                                         Max.   :1.46e+05   Max.   :9935475   Max.   : 51.06   Max.   :3339763   Max.   :136774   Max.   :2.010   Max.   :55.3   Max.   :7359883  
+ (Other)     :2254                                                                       NA's   :1.00e+00                                                                                                                         
+    Black05            AIAN05          Asian05           NHOPI05           LF05          UnempRate05     PersIncome05      PCPersIncome05     JanTemp        JulTemp        JulHumid                     Typography  
+ Min.   :      0   Min.   :     0   Min.   :      0   Min.   :    0   Min.   :     40   Min.   : 1.90   Min.   :4.74e+03   Min.   : 5148   Min.   : 1.1   Min.   :55.5   Min.   :14.0   4: Irregular plains   :1000  
+ 1st Qu.:     79   1st Qu.:    39   1st Qu.:     29   1st Qu.:    0   1st Qu.:   5155   1st Qu.: 4.20   1st Qu.:2.67e+05   1st Qu.:23370   1st Qu.:24.2   1st Qu.:72.3   1st Qu.:49.8   14: Open hills        : 299  
+ Median :    713   Median :   121   Median :    106   Median :    4   Median :  12127   Median : 5.10   Median :6.39e+05   Median :26368   Median :33.2   Median :76.4   Median :59.0   1: Flat plains        : 285  
+ Mean   :  12069   Mean   :   911   Mean   :   4039   Mean   :  164   Mean   :  47482   Mean   : 5.41   Mean   :3.27e+06   Mean   :27367   Mean   :32.9   Mean   :75.9   Mean   :56.2   2: Smooth plains      : 215  
+ 3rd Qu.:   5139   3rd Qu.:   443   3rd Qu.:    527   3rd Qu.:   28   3rd Qu.:  31641   3rd Qu.: 6.20   3rd Qu.:1.76e+06   3rd Qu.:29989   3rd Qu.:42.0   3rd Qu.:80.0   3rd Qu.:66.0   16: Open low mountains: 185  
+ Max.   :1401611   Max.   :104875   Max.   :1302882   Max.   :76736   Max.   :4837365   Max.   :20.90   Max.   :3.42e+08   Max.   :93377   Max.   :67.2   Max.   :93.7   Max.   :80.0   (Other)               :1120  
+                                                                      NA's   :      8   NA's   : 8.00   NA's   :5.50e+01   NA's   :   55   NA's   :37.0   NA's   :37.0   NA's   :37.0   NA's                  :  37  
+  AmenityScale          AmenityRank               WarmHumid      PropTax02       PropTaxPerCap02  CrimeRate04     TotalVotes04      BushVotes04       KerryVotes04      OtherVotes04   P.HPSA.Cty07  M.HPSA.Cty07  D.HPSA.Cty07 
+ Min.   :-6.4000   3: 0 to -1 :1259   0: Not warm humid:2705   Min.   :      0   Min.   :    0   Min.   :    0   Min.   :     80   Min.   :     65   Min.   :     12   Min.   :    0   0: No :2393   0: No :2704   0: No :2682  
+ 1st Qu.:-1.4200   4: 0 to 1  : 997   1: Warm humid    : 436   1st Qu.:   6026   1st Qu.:  438   1st Qu.: 1553   1st Qu.:   4943   1st Qu.:   2967   1st Qu.:   1810   1st Qu.:   39   1: Yes: 748   1: Yes: 437   1: Yes: 459  
+ Median :-0.1400   2: -1 to -2: 434                            Median :  14657   Median :  673   Median : 2438   Median :  10640   Median :   6421   Median :   4095   Median :   89                                            
+ Mean   : 0.0491   5: 1 to 2  : 248                            Mean   :  83124   Mean   :  798   Mean   : 2771   Mean   :  39184   Mean   :  19868   Mean   :  18926   Mean   :  389                                            
+ 3rd Qu.: 1.0800   6: 2 to 3  : 113                            3rd Qu.:  41975   3rd Qu.:  958   3rd Qu.: 3647   3rd Qu.:  27532   3rd Qu.:  16410   3rd Qu.:  10679   3rd Qu.:  257                                            
+ Max.   :11.1700   (Other)    :  53                            Max.   :7524421   Max.   :31397   Max.   :13654   Max.   :3023280   Max.   :1076225   Max.   :1907736   Max.   :39319                                            
+ NA's   :37.0000   NA's       :  37                            NA's   :      6   NA's   :    6   NA's   :  220   NA's   :     28   NA's   :     28   NA's   :     28   NA's   :   28                                            
+> cd ..
+Error: syntax error
+> beer<-read.dta("beer.dta")
+> attach(beer)
+
+	The following object(s) are masked from package:robustbase :
+
+	 alcohol 
+
+> summary(beer)
+     name              contqual       quality         price         calories      alcohol       craftbeer         bitter         malty                      class   
+ Length:69          Min.   :24.0   Min.   :1.00   Min.   :2.36   Min.   : 58   Min.   :0.50   Min.   :0.000   Min.   : 8.0   Min.   : 5.0   Craft Lager        :13  
+ Class :character   1st Qu.:49.0   1st Qu.:2.00   1st Qu.:3.90   1st Qu.:142   1st Qu.:4.40   1st Qu.:0.000   1st Qu.:21.0   1st Qu.:12.0   Craft Ale          :17  
+ Mode  :character   Median :70.0   Median :3.00   Median :4.79   Median :148   Median :4.90   Median :0.000   Median :31.0   Median :23.0   Imported Lager     :10  
+                    Mean   :64.8   Mean   :2.54   Mean   :4.96   Mean   :142   Mean   :4.47   Mean   :0.435   Mean   :35.4   Mean   :33.1   Regular or Ice Beer:16  
+                    3rd Qu.:80.0   3rd Qu.:4.00   3rd Qu.:6.24   3rd Qu.:160   3rd Qu.:5.10   3rd Qu.:1.000   3rd Qu.:52.5   3rd Qu.:50.5   Light Beer         : 6  
+                    Max.   :98.0   Max.   :4.00   Max.   :7.80   Max.   :201   Max.   :6.00   Max.   :1.000   Max.   :80.5   Max.   :86.0   Nonalcoholic       : 7  
+> beer.logit<-polr(as.factor(quality)~price+calories+craftbeer+bitter+malty)
+> summary(beer.logit)
+
+Re-fitting to get Hessian
+
+Error in optim(start, fmin, gmin, method = "BFGS", hessian = Hess, ...) : 
+  initial value in 'vmmin' is not finite
+> summary(beer.logit)
+
+Re-fitting to get Hessian
+
+Error in optim(start, fmin, gmin, method = "BFGS", hessian = Hess, ...) : 
+  initial value in 'vmmin' is not finite
+> beer.logit<-polr(as.factor(quality)~price+calories+craftbeer+bitter+malty)
+> summary(beer.logit)
+
+Re-fitting to get Hessian
+
+Error in optim(start, fmin, gmin, method = "BFGS", hessian = Hess, ...) : 
+  initial value in 'vmmin' is not finite
+> beer.logit<-polr(quality~price+calories+craftbeer+bitter+malty)
+Error in polr(quality ~ price + calories + craftbeer + bitter + malty) : 
+  response must be a factor
+> beer.logit<-polr(as.factor(quality)~price+calories+craftbeer+bitter+malty)
+> summary(beer.logit)
+
+Re-fitting to get Hessian
+
+Error in optim(start, fmin, gmin, method = "BFGS", hessian = Hess, ...) : 
+  initial value in 'vmmin' is not finite
+> ?polr
+> library(zelig)
+Error in library(zelig) : there is no package called 'zelig'
+> ?zelig
+> library(Zelig)
+## 
+##  Zelig (Version 3.1-0, built: 2007-11-30)
+##  Please refer to http://gking.harvard.edu/zelig for full documentation 
+##  or help.zelig() for help with commands and models supported by Zelig.
+##
+
+Attaching package: 'Zelig'
+
+
+	The following object(s) are masked from package:MatchIt :
+
+	 user.prompt 
+
+
+	The following object(s) are masked from package:irtoys :
+
+	 sim 
+
+
+	The following object(s) are masked from package:arm :
+
+	 sim 
+
+
+	The following object(s) are masked from package:reshape :
+
+	 dims 
+
+
+	The following object(s) are masked from package:vcd :
+
+	 ternaryplot 
+
+> beer.zelig<-zelig(as.factor(quality)~price+calories+craftbeer+bitter+malty, model="ologit",data=beer)
+> summary(beer.zelig)
+Call:
+zelig(formula = as.factor(quality) ~ price + calories + craftbeer + 
+    bitter + malty, model = "ologit", data = beer)
+
+Coefficients:
+             Value Std. Error t value
+price     -0.45052    0.29342 -1.5354
+calories   0.04674    0.01220  3.8304
+craftbeer -1.70474    0.94194 -1.8098
+bitter    -0.02969    0.04243 -0.6998
+malty      0.05053    0.02460  2.0541
+
+Intercepts:
+    Value  Std. Error t value
+1|2  2.771  1.674      1.655 
+2|3  4.270  1.725      2.475 
+3|4  5.578  1.760      3.170 
+
+Residual Deviance: 163.74 
+AIC: 179.74 
+> plot(beer.zelig)
+Error in plot.window(...) : need finite 'xlim' values
+In addition: Warning messages:
+1: In x[["x"]] : partial match of 'x' to 'xlevels'
+2: In min(x) : no non-missing arguments to min; returning Inf
+3: In max(x) : no non-missing arguments to max; returning -Inf
+4: In min(x) : no non-missing arguments to min; returning Inf
+5: In max(x) : no non-missing arguments to max; returning -Inf
+> plot(beer.zelig)
+Error in plot.window(...) : need finite 'xlim' values
+In addition: Warning messages:
+1: In x[["x"]] : partial match of 'x' to 'xlevels'
+2: In min(x) : no non-missing arguments to min; returning Inf
+3: In max(x) : no non-missing arguments to max; returning -Inf
+4: In min(x) : no non-missing arguments to min; returning Inf
+5: In max(x) : no non-missing arguments to max; returning -Inf
+> x.out<-setx(beer.zelig)
+> beer.sim<-sim(beer.zelig,x.out)
+> summary(beer.sim)
+
+  Model: ologit 
+  Number of simulations: 1000 
+
+Values of X 
+  (Intercept) price calories craftbeer bitter malty
+1           1 4.963    142.3    0.4348  35.44 33.13
+
+Expected Values: P(Y=j|X)
+    mean      sd    2.5%  97.5%
+1 0.1825 0.05124 0.09721 0.2979
+2 0.3202 0.06958 0.20589 0.4859
+3 0.2893 0.06369 0.17849 0.4323
+4 0.2080 0.05220 0.11586 0.3235
+
+Predicted Values: Y|X
+      1     2   3    4
+1 0.168 0.322 0.3 0.21
+> plot(beer.sim)
+> ls()
+ [1] "DH"            "ExerciseThree" "ExerciseTwo"   "NC"            "NFL"           "beer"          "beer.logit"    "beer.sim"      "beer.zelig"    "x.out"        
+> rm(beer.zelig)
+> rm(beer.logit)
+> rm(beer.sim)
+> rm(x.out)
+> ls()
+[1] "DH"            "ExerciseThree" "ExerciseTwo"   "NC"            "NFL"           "beer"         
+Error in file.choose(TRUE) : file choice cancelled
+> 
