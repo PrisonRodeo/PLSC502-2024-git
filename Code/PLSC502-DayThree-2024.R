@@ -124,7 +124,7 @@ DF<-rbind(BWA,NAM)
 pdf("RadarChart15-2.pdf",6,6)
 radarchart(DF,vlcex=0.8)
 legend("topright",col=c("black","red"),pch=19,bty="n",
-       legend=c("Botswana","Libya"))
+       legend=c("Botswana","Namibia"))
 dev.off()
 
 # Add Ethiopia?
@@ -138,7 +138,7 @@ DF<-rbind(DF,ETH)
 pdf("RadarChart15-3.pdf",6,6)
 radarchart(DF,vlcex=0.8)
 legend("topright",col=c("black","red","green"),pch=19,bty="n",
-       legend=c("Botswana","Libya","Ethiopia"))
+       legend=c("Botswana","Namibia","Ethiopia"))
 dev.off()
 
 # MAPS!
