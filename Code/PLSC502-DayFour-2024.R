@@ -144,7 +144,7 @@ abline(v=((m-1)/(m+m-2))-0.002,lwd=2,col="orange",lty=2) # mode
 legend("topright",bty="n",legend=c("Mean","Median","Mode"),
        lwd=3,lty=c(2,2,2),col=c("red","darkgreen","orange"))
 # left-skewed:
-plot(x,left,t="l",lwd=2,main="Right-Skewed",
+plot(x,left,t="l",lwd=2,main="Left-Skewed",
      xlab="X",ylab="Density")
 abline(v=(p/(p+q)),lwd=2,col="red",lty=2) # mean
 abline(v=((p-(1/3))/(q+p-(2/3))),lwd=2,col="darkgreen",lty=2) # median
